@@ -9,6 +9,16 @@ function escape($value)
 
 // Mock data
 $statuses = ['Åpen', 'Under behandling', 'Løst'];
+
+$categories = [
+    'teknisk'  => 'Teknisk støtte',
+    'faktura'  => 'Betaling og faktura',
+    'generelt' => 'Generelt',
+];
+
+$priorities = ['Lav', 'Normal', 'Høy'];
+
+$priorities = ['Lav', 'Normal', 'Høy'];
 if (!isset($_SESSION['tickets'])) {
     $_SESSION['tickets'] = [
         1001 => ['subject' => 'Får ikke logget inn', 'customer' => 'Emma Hansen', 'email' => 'emma@example.com', 'category' => 'Teknisk støtte', 'priority' => 'Høy', 'owner' => '', 'status' => 'Åpen', 'history' => [
